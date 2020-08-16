@@ -1,0 +1,13 @@
+{
+  "short_name": "Face Mask Recognition",
+  "name": "Face Mask Recognition Website",
+  "homepage": "https://albertklam.com/hack20",
+  
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}
