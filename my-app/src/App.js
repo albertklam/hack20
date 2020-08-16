@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './maskemoji.png';
 import './App.css';
+const tf = require('@tensorflow/tfjs');
 
 
 
@@ -13,7 +14,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <p>
-            Face Mask Detection
+            Face Mask Detector
           </p>
           <img src={logo} className="App-logo" alt="logo" />
         </header>
@@ -54,6 +55,7 @@ class ImageForm extends React.Component {
     this.state = {selectedFile: null};
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    
   }
 
   render() {
@@ -74,7 +76,7 @@ class ImageForm extends React.Component {
     e.preventDefault();
     return (
       <div>
-        <img id="image" crossorigin="anonymous" src={this.state.selectedFile}/>
+        <img id="image" crossorigin="anonymous" src={this.state.selectedFile} alt="This is not an image"/>
         {this.run()}
       </div>
     );
