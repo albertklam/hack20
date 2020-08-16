@@ -1,0 +1,2 @@
+wearing_mask
+no_mask
