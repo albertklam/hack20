@@ -52,7 +52,8 @@ class ImageForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {selectedFile: null};
-    this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   render() {
@@ -76,7 +77,7 @@ class ImageForm extends React.Component {
         <img id="image" crossorigin="anonymous" src={this.state.selectedFile}/>
         {this.run()}
       </div>
-    )
+    );
   }
 
   async run() {
