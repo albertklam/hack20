@@ -1,0 +1,14 @@
+/**
+ * style.CSS
+ * Junxi Liao
+ * 05/17/19
+ *
+ * This file controls the style and appearance of index.html
+ */
+
+body {
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  color: black;
+}
