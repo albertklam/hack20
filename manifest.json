@@ -1,13 +1,10 @@
 {
   "short_name": "Face Mask Recognition",
   "name": "Face Mask Recognition Website",
-  "homepage": "https://0tylernguyen@github.io",
+  
   
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff",
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  }
+  "background_color": "#ffffff"
+  
 }
