@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c3621be8c08b733cab5d0ff4a91a6d82",
+    "revision": "06bd667bca35a03433caa0be81ccbe31",
     "url": "/hack20/index.html"
   },
   {
-    "revision": "62291d3c2eafaab5719e",
-    "url": "/hack20/static/css/main.62415365.chunk.css"
+    "revision": "9e41d00243ff9149d06b",
+    "url": "/hack20/static/css/main.4beab480.chunk.css"
   },
   {
-    "revision": "90e52c57d37746d906fc",
-    "url": "/hack20/static/js/2.763b34e5.chunk.js"
+    "revision": "714359ac221eb521c890",
+    "url": "/hack20/static/js/2.7d72e063.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/hack20/static/js/2.763b34e5.chunk.js.LICENSE.txt"
+    "url": "/hack20/static/js/2.7d72e063.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "62291d3c2eafaab5719e",
-    "url": "/hack20/static/js/main.1a36023e.chunk.js"
+    "revision": "9e41d00243ff9149d06b",
+    "url": "/hack20/static/js/main.1c3455a8.chunk.js"
   },
   {
     "revision": "f5ff8888ec6c2bde7420",
