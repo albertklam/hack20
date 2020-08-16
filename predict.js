@@ -24,9 +24,9 @@ function main(
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
-  // const projectId = 'YOUR_PROJECT_ID';
+  // const projectId = 'hack-now-286520';
   // const location = 'us-central1';
-  // const modelId = 'YOUR_MODEL_ID';
+  // const modelId = 'mask_detection_20200815064647';
   // const filePath = 'path_to_local_file.jpg';
 
   // Imports the Google Cloud AutoML library
