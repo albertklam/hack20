@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mask Detector</title>
+  </head>
+  <body>
+    <section>
+      <h1> Face Mask Detector</h1>
+      <p>
+      Amid this pandemic, wearing masks is paramount to slowing the spread of COVID-19. Our team trained an ML 
+      model to recognize which people in an image are wearing masks and which people are not, then deployed 
+      the model to this web app. Mask Detector also has a variety of potential applications and extensions into the real world:
+      <ol>
+        <li> Community integration. Our ML models could be implemented into home, school, or business surveillance 
+          systems to improve security and help keep public spaces safe. </li>
+        <li> Data collection and statistical analysis. Snapshots from traffic cameras or surveillance systems can act 
+          as random samples of populations in various times and locations. Such snapshots can be used to deduce crucial 
+          statistics about the Coronavirus’ spread and the effectiveness of current safety measures. Having a reliable 
+          face mask recognition system could expedite and expand data collection and pave the way for deeper and more 
+          insightful statistical analyses.</li>
+        <li> Facial recognition. In an effort to normalize mask wearing in our current society, could we improve facial recognition 
+          systems to recognize individuals even when they wear face coverings? Such a model could also have deep implications 
+          into other fields such as the justice system where criminals often wear masks to conceal their identities. Perhaps 
+          the recent interest in face mask recognition is a step in that direction.</li>
+      </ol>
+      Learn more about the importance of masks 
+      <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#:~:text=Masks%20are%20recommended%20as%20a,This%20is%20called%20source%20control."> here</a>.
+      </p>
+    </section>
+
+    <section id='more_info'>
+        If you are interested in the
+        <a href="https://github.com/albertklam/hack20"> project source code</a>.
+    </section>
+
+    <section>
+      <h2>To demonstrate our model</h2>
+      Here you can upload a photo used for detection. While this may be a
+      trivial application for our model, it serves the purpose of demonstrating
+      the accuracy and concept of our project.
+    </section>
+
+    <section id='imgupld'>
+        <div id="imgDiv" style="position:relative;">
+          <img id="testimage" height="400">
+          <svg width="1500" height="400" style="position: absolute;top:0;left:0;">
+            <style>
+              .box {
+                stroke-width: 2;
+                fill: none;
+                stroke: red;
+              }
+              .label {
+                font-size: 12px;
+                fill: white;
+                text-anchor: middle;
+              }
+              .label-rect {
+                fill: black;
+              }
+            </style>
+          </svg>
+        </div>
+        Select image to upload:
+        <input type="file" accept="image/*" id="imginput" onchange="displayImg(event)">
+        <input type="button" value="Predict" onclick="run()"><br>
+        
+        <script>
+            var displayImg = function(event) {
+                let input = event.target;
+
+                let reader = new FileReader();
+                reader.onload = function() {
+                    var dataURL = reader.result;
+                    var output = document.getElementById('testimage');
+                    output.src = dataURL;
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        </script>
+
+        <script src="https://unpkg.com/@tensorflow/tfjs"></script>  
+        <script src="https://unpkg.com/@tensorflow/tfjs-automl"></script>
+        <script src="predict.js"></script>
+    </section>
+
+    <section id='result'>
+        <h3>Results</h3>
+    </section>
+  </body>
+</html>
+
+
